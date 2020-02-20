@@ -15,21 +15,22 @@
     </div>
     <div class="container">
         <div class="input_wrapper">
-            <input type="text" id="input_tl">
+            <input type="text" id="input_tl" onkeypress="return isNumber(event)">
         </div>
         <div class="input_wrapper">
-            <input type="text" id="input_tr">
+            <input type="text" id="input_tr" onkeypress="return isNumber(event)">
         </div>
         <div class="input_wrapper">
-            <input type="text" id="input_bl">
+            <input type="text" id="input_bl" onkeypress="return isNumber(event)">
         </div>
         <div class="input_wrapper">
-            <input type="text" id="input_br">
+            <input type="text" id="input_br" onkeypress="return isNumber(event)">
         </div>
         <div class="surface">
             <textarea id="code" readonly="readonly"></textarea>
         </div>
     </div>
 </body>
+<script src="{% static 'index.js' %}"></script>
 
 </html>
