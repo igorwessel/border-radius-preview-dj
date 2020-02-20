@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kalam&display=swap');
+
+
 .container {
     position: relative;
     width: 550px;
@@ -35,4 +38,23 @@ input {
     color: white;
     border: 1px solid rgb(54, 50, 50);
     background-color: rgb(119, 109, 109);
+}
+
+/* TODO: pensando sobre a fonte ainda...*/
+.logo {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kalam', cursive; 
+    /* font-family: 'Courgette', cursive; */
+
+}
+
+.surface {
+    padding: 45px 0px 0px 65px;
+}
+
+#code {
+    width: 400px;
+    height: 200px;
+    resize: none;
 }
