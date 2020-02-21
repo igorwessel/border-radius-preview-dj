@@ -59,8 +59,7 @@ input {
 
 #code {
     position: relative;
-    overflow: hidden;
     width: 400px;
-    /* height: 200px; */
+    height: 200px;
     resize: none;
 }
