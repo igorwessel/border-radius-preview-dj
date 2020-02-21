@@ -1,8 +1,7 @@
 let input = document.querySelectorAll('input')
 let surface = document.querySelector('.surface')
-let stylesheet = document.styleSheets[0].cssRules[8].style
+let code_text = document.querySelector('#code')
 let input_array = []
-console.log(stylesheet)
 
 
 input.forEach((e, k, n) => {
@@ -27,6 +26,8 @@ input.forEach((e, k, n) => {
         border-bottom-left-radius: ${input_array[2]}px;
         border-bottom-right-radius: ${input_array[3]}px;
         `
+        code_text.value = surface.style.cssText
+
     })
 })
 
