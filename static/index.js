@@ -1,19 +1,27 @@
 let input = document.querySelectorAll('input')
 let surface = document.querySelector('.surface')
 let code_text = document.querySelector('#code')
-let input_array = []
+let input_array = [0, 0, 0, 0, 0, 0, 0, 0]
 
 
 input.forEach((e, k, n) => {
     e.addEventListener('input', (event) => {
         if (e.getAttribute('id') == 'input_tl') {
             input_array[0] = e.value
-        } else if (e.getAttribute('id') == 'input_tr') {
+        } else if (e.getAttribute('id') == 'input_tlt') {
             input_array[1] = e.value
-        } else if (e.getAttribute('id') == 'input_bl') {
+        } else if (e.getAttribute('id') == 'input_tr') {
             input_array[2] = e.value
-        } else {
+        } else if (e.getAttribute('id') == 'input_trt') {
             input_array[3] = e.value
+        } else if (e.getAttribute('id') == 'input_bl') {
+            input_array[4] = e.value
+        } else if (e.getAttribute('id') == 'input_blb') {
+            input_array[5] = e.value
+        } else if (e.getAttribute('id') == 'input_br') {
+            input_array[6] = e.value
+        } else {
+            input_array[7] = e.value
         }
         input_array.map((v, i) => {
             if (v == '') {
@@ -21,12 +29,21 @@ input.forEach((e, k, n) => {
             }
         })
         surface.style = `
-        border-top-left-radius: ${input_array[0]}px;
-        border-top-right-radius: ${input_array[1]}px;
-        border-bottom-left-radius: ${input_array[2]}px;
-        border-bottom-right-radius: ${input_array[3]}px;
+        border-top-left-radius: ${input_array[0]}px ${input_array[1]}px;
+        border-top-right-radius: ${input_array[2]}px ${input_array[3]}px;
+        border-bottom-left-radius: ${input_array[4]}px ${input_array[5]}px;
+        border-bottom-right-radius: ${input_array[6]}px ${input_array[7]}px;
         `
         code_text.value = surface.style.cssText
+        //         code_text.value = `-moz-border-radius-topleft: ${input_array[0]}px;
+        // -moz-border-radius-topright: ${input_array[1]}px;
+        // -moz-border-radius-bottomleft: ${input_array[2]}px;
+        // -moz-border-radius-bottomright:	${input_array[3]}px;
+        // -webkit-border-top-left-radius: ${input_array[0]}px;
+        // -webkit-border-top-right-radius: ${input_array[1]}px;
+        // -webkit-border-bottom-left-radius: ${input_array[2]}px;
+        // -webkit-border-bottom-right-radius: ${input_array[3]}px;
+        // ${surface.style.cssText}`
 
     })
 })
