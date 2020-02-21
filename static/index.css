@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette|Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Roboto&display=swap');
 
 
 .container {
@@ -13,9 +13,21 @@
     left: -35px;
 }
 
+#input_tlt {
+    position: absolute;
+    left: 5px;
+    top: -28px;
+}
+
 #input_tr {
     position: absolute;
     right: -35px;
+}
+
+#input_trt {
+    position: absolute;
+    right: 5px;
+    top: -28px;
 }
 
 #input_bl {
@@ -24,10 +36,22 @@
     bottom: 0px;
 }
 
+#input_blb {
+    position: absolute;
+    left: 5px;
+    bottom: -28px;
+}
+
 #input_br {
     position: absolute;
     right: -35px;
     bottom: 0px;
+}
+
+#input_brb {
+    position: absolute;
+    right:5px;
+    bottom: -28px;
 }
 
 input {
@@ -40,12 +64,11 @@ input {
     background-color: rgb(119, 109, 109);
 }
 
-/* TODO: pensando sobre a fonte ainda...*/
+
 .logo {
     text-align: center;
     font-size: 50px;
-    font-family: 'Kalam', cursive; 
-    /* font-family: 'Courgette', cursive; */
+    font-family: 'Kalam', cursive;
 
 }
 
@@ -58,6 +81,9 @@ input {
 }
 
 #code {
+    font-family: 'Roboto',;
+    font-size: 15px;
+    padding: 9px;
     position: relative;
     width: 400px;
     height: 200px;
