@@ -34,16 +34,10 @@ input.forEach((e, k, n) => {
         border-bottom-left-radius: ${input_array[4]}px ${input_array[5]}px;
         border-bottom-right-radius: ${input_array[6]}px ${input_array[7]}px;
         `
-        code_text.value = surface.style.cssText
-        //         code_text.value = `-moz-border-radius-topleft: ${input_array[0]}px;
-        // -moz-border-radius-topright: ${input_array[1]}px;
-        // -moz-border-radius-bottomleft: ${input_array[2]}px;
-        // -moz-border-radius-bottomright:	${input_array[3]}px;
-        // -webkit-border-top-left-radius: ${input_array[0]}px;
-        // -webkit-border-top-right-radius: ${input_array[1]}px;
-        // -webkit-border-bottom-left-radius: ${input_array[2]}px;
-        // -webkit-border-bottom-right-radius: ${input_array[3]}px;
-        // ${surface.style.cssText}`
+
+        code_text.value = `-moz-border-radius: ${surface.style.cssText.slice(15)}
+-webkit-border-radius: ${surface.style.cssText.slice(15)}
+${surface.style.cssText}`
 
     })
 })
