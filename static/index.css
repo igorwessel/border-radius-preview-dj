@@ -58,6 +58,7 @@ input {
     padding: 2px;
     text-align: center;
     color: white;
+    font-weight: bold;
     outline: none;
     border: 1px solid rgb(54, 50, 50);
     background-color: rgb(119, 109, 109);
@@ -90,4 +91,5 @@ input {
     width: 359px;
     height: 80px;
     resize: none;
+    overflow: hidden;
 }

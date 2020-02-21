@@ -1,5 +1,7 @@
 # Border-radius Previewer
 
+Idea from [here](https://github.com/florinpop17/app-ideas)
+
 **Tier:** 1-Beginner
 
 The border-radius property can have multiple values changed. Preview how the shape looks while changing these values.
@@ -12,4 +14,12 @@ The border-radius property can have multiple values changed. Preview how the sha
 
 ## Bonus features
 
--   [ ] User can change all 8 possible values of the border-radius in order to create a complex shape
+-   [x] ~User can change all 8 possible values of the border-radius in order to create a complex shape~
+
+# Installation
+
+Install django if you don't have
+  - pip install django
+
+Start the django application
+  - python manage.py runserver
