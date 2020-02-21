@@ -4,7 +4,6 @@
 .container {
     position: relative;
     width: 550px;
-    /* height: 300px; */
     margin: 50px auto;
 }
 
@@ -77,15 +76,18 @@ input {
     border: 2px solid rgb(92, 92, 92);  
     background-color: rgb(92, 92, 92);
     width: 455px;
+    height: 255px;
     text-align: center;
 }
 
 #code {
+    position: absolute;
     font-family: 'Roboto',;
-    font-size: 15px;
+    font-size: 13px;
     padding: 9px;
-    position: relative;
-    width: 400px;
-    height: 200px;
+    margin-top: 100px;
+    margin-left: -379px;
+    width: 359px;
+    height: 80px;
     resize: none;
 }
